@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <!-- Тег meta для указания кодировки -->
+  <meta charset="utf-8">
+</head>
+
+<body>
+
+	В документе создайе блок в котором вы будете заполнять информацию о брайзере и платформе пользователя! Выведите пользователю информацию о его браузере и о платформе на которой он работает!
+
+<div id = 'b1'>
+
+</div>
+
+<div id = 'b2'>
+
+</div>
+  
+  <script>
+
+  function create(){
+  
+  var newE = document.createElement('div');
+
+  document.body.appendChild(newE);
+
+  newE.innerText = 'info about browser: ' + navigator.userAgent + '   ' + 'your platform: ' + navigator.platform ;
+
+
+
+ }
+ 
+ create()
+
+  </script>
+
+
+</body>
+
+</html>
