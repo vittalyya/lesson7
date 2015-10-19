@@ -1,0 +1,1 @@
+win = window.open("about:blank", "hello", "width=400,height=500, location='no', status='yes', resizable='yes', scrollbars='yes' ");
