@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <!-- Тег meta для указания кодировки -->
+  <meta charset="utf-8">
+</head>
+
+<body>
+
+<div id = 'b1'>
+
+</div>
+
+<div id = 'b2'>
+
+</div>
+  
+  <script>
+
+  function ok(){
+
+ win = window.open("https://www.google.com.ua", "google", "width=400,height=500, ");
+
+ setTimeout(function(){win.close(); alert('у вас было 5 секунд но вы не успели ничего найти и окно закрылось! ну ты и лошара')}, 5000);
+
+ }  
+ 
+ ok()
+
+  </script>
+
+
+</body>
+
+</html>
