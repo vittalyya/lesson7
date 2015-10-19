@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <!-- Тег meta для указания кодировки -->
+  <meta charset="utf-8">
+</head>
+
+<body>
+
+
+  
+  <script>
+
+  function create(){
+
+  for (var i=1; i<=5; i++){
+	var newElement = document.createElement('div');
+
+	 document.body.appendChild(newElement);
+
+	 newElement.id = i;
+ }
+  
+}
+
+	function check(){
+
+ if (navigator.appName == "Opera") {
+ 	var el1 = document.getElementById('1');
+ 	el1.innerText="opera";
+            }
+
+            if (navigator.appName == "Microsoft Internet Explorer") {
+            var el1 = document.getElementById('2');
+ 			el1.innerText="ms";
+            }
+
+            if (navigator.vendor == "Apple Computer, Inc.") {
+            var el1 = document.getElementById('3');
+ 			el1.innerText="safari";
+            }
+
+            if (navigator.vendor == "Google Inc.") {
+			var el1 = document.getElementById('4');
+ 			el1.innerText="chrome";
+            }
+
+            if (navigator.oscpu) {
+            var el1 = document.getElementById('5');
+ 			el1.innerText="mozilla";
+            }
+
+        };
+  
+
+ 
+ create();
+ check();
+
+  </script>
+
+
+</body>
+
+</html>
